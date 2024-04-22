@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí đồ án tốt nghiệp </title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    display: flex;
+    
+}
+
+aside {
+    width: 200px;
+    float: left;
+    background-color: #180202;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+
+li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #d6d6d6;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #5e4b4b;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    border: 1px solid #00ad54;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: #6c0505;
+    border-radius: 10px;
+}
+
+.statistics-box {
+
+    padding: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer {
+    background-color: #6c0505;
+    color: #fff;
+    padding: 10px 20px;
+    height: 28px;
+}
+
+.theoopen {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1168px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(23, 5, 5, 0.307);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.box1 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color: rgb(139, 164, 218);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; 
+    border-radius: 10px;
+}
+
+.box2 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color : rgb(199, 88, 88);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; 
+    border-radius: 10px;
+}
+
+.box3 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color:rgb(37, 185, 141);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; 
+    border-radius: 10px;
+}
+
+.box4 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color:rgb(182, 143, 182);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; 
+    border-radius: 10px;
+}
+
+.box5 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color: rgb(182, 143, 182);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; 
+    border-radius: 10px;
+}
+
+.box6 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color:rgb(37, 185, 141);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    margin: 20px; border-radius: 10px;
+}
+
+.box7 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color:rgb(199, 88, 88);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px; 
+}
+
+.box8 {
+    flex: 1 0 25%;
+    padding: 10px;
+    background-color:rgb(182, 143, 182);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px; 
+}
+
+h2 {
+    color: #fff;
+}
+
+h6 {
+    color: #fff;
+}
+
+</style>
+<body>
+
+<main>
+    <div class = "container">
+        <aside class = "sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Quản lý khoa</a></li>
+                        <li><a href="#">Quản lý chuyên ngành</a></li>
+                        <li><a href="#">Quản lý Hệ đào tạo</a></li>
+                        <li><a href="#">Quản lý Niên kháo</a></li>
+                        <li><a href="#">Quản lý lớp</a></li>
+                        <li><a href="bai2phan2.html">Quản lý Giáo viên</a></li>
+                        <li><a href="#">Quản lý Hội đồng</a></li>
+                        <li><a href="#">Quản lý sinh viên</a></li>
+                        <li><a href="#">Danh sách đồ án</a></li>
+                        <li><a href="#">Quản lý</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class = "content">
+            <h1>Quản lí đồ án tốt nghiệp</h1>
+            <div class="login-box" style="background-color: rgb(107, 231, 107);"><p>
+            Đăng nhập thành công! </p></div>
+            <h3>Thống Kê</h3>
+            <div class ="theoopen">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="box1">
+                            <h2>27</h2>
+                            <h6>Tổng số sinh viên</h6>
+                        </div>
+                        <div class="box2">
+                            <h2>28</h2>
+                            <h6>Tổng số lớp</h6>
+                        </div>
+                        <div class="box3">
+                            <h2>4</h2>
+                            <h6>Tổng số khoa</h6>
+                        </div>
+                        <div class="box4">
+                            <h2>11</h2>
+                            <h6>Tổng số chuyên ngành</h6>
+                        </div>
+                    </div>
+               
+                    <div class="row">
+                        <div class="box5">
+                            <h2>11</h2>
+                            <h6>Tổng số đồ án</h6>
+                        </div>
+                        <div class="box6">
+                            <h2>10</h2>
+                            <h6>Sinh viên đạt</h6>
+                        </div>
+                        <div class="box7">
+                            <h2>1</h2>
+                            <h6>Sinh viên chưa đặt</h6>
+                        </div>
+                        <div class="box8">
+                            <h2>23</h2>
+                            <h6>Tổng số giáo viên</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>

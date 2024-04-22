@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí giáo viên </title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(129, 7, 7);
+    height: 60px;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    background-color: #798993;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #2bc9b1;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar label {
+    margin-right: 10px;
+}
+
+.search-bar select,
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #dd2d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+footer {
+    background-color:0;
+    color: #fff;
+    padding: 10px 20px;
+    height: 28px;
+}
+
+    </style>
+<body>
+
+<main>
+    <aside>
+            <nav>
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Quản lý khoa</a></li>
+                        <li><a href="">Quản lý chuyên ngành</a></li>
+                        <li><a href="">Quản lý Hệ đào tạo</a></li>
+                        <li><a href="">Quản lý Niên kháo</a></li>
+                        <li><a href="">Quản lý lớp</a></li>
+                        <li><a href="" <style background-color: #f0f0f0></style>Quản lý Giáo viên</a></li>
+                        <li><a href="">Quản lý Hội đồng</a></li>
+                        <li><a href="">Quản lý sinh viên</a></li>
+                        <li><a href="">Danh sách đồ án</a></li>
+                        <li><a href="">Quản lý</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            
+            <div class="search-bar">
+                
+               
+
+                
+                <select id="chuyenKhoa" style="margin-right: 10px;">
+                    <option value="">Chọn khoa</option>
+                    <option value="LTMT">Lập trình máy tính</option>
+                    <option value="MMT">Mạng máy tính</option>
+                    <option value="KTPM">Kỹ thuật phần mềm</option>
+                </select>
+                <select id="nganh" style="margin-right: 10px;">
+                    <option value="">Chọn Ngành </option>
+                    <option value="HTTT">Hệ thống Thông tin </option>
+                    <option value="CNTT">Công nghệ thông tin</option>
+                    <option value="TK">Kỹ thuật</option>
+                    <option value="KT">Kinh tế</option>
+                </select>
+
+                <input type="text" id="timKiem" placeholder="Tìm kiếm" style="margin-right: 10px; ">
+                <button id="lamMoi">Làm mới</button>
+            </div>
+            <div style="background-color: rgb(133, 105, 105); padding: 10px; margin: 20px 0;">
+                <h2>Quản lý giáo viên</h2>
+            </div>
+       
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên giáo viên</th>
+                        <th>Thông tin</th>
+                        <th>Khoa</th>
+                        <th>Chuyên ngành</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="meo.jpg" alt="" style="width: 40px; height: 50px;">
+                        </td>
+                        <td>
+                           <p>Nguyễn Sỹ Duy </p>
+                        </td>
+                        <td>
+                           <ul>
+                                <li>Sđt: 01223456789</li>
+                                <li>Email : duy123@gmail.com</li>
+                                <li>Đại học: Học viện Công nghệ Bưu chính Viễn thông</li>
+                           </ul>
+                        </td>
+                        <td>
+                            <p>Lập trình máy tính</p>
+                        </td>
+                        <td>
+                           Hệ thống thông tin
+                        </td>
+                        <td>
+                            <button id="them">Thêm </button>
+                            <button id="xoa">Xóa </button>
+                        </td>
+                    <tr>
+
+                        <tr>
+                            <td>
+                                <img src="meo.jpg" alt="" style="width: 40px; height: 50px;">
+                            </td>
+                            <td>
+                               <p>Nguyễn Sỹ Duy </p>
+                            </td>
+                            <td>
+                               <ul>
+                                    <li>Sđt: 0354827766</li>
+                                    <li>Email : duy123@gmail.com</li>
+                                    <li>Đại học: Học viện Công nghệ Bưu chính Viễn thông</li>
+                               </ul>
+                            </td>
+                            <td>
+                                <p>Mạng máy tính</p>
+                            </td>
+                            <td>
+                                Công nghệ thông tin
+                            </td>
+                            <td>
+                                <button id="them">Thêm </button>
+                                <button id="xoa">Xóa </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="meo.jpg" alt="" style="width: 40px; height: 50px;">
+                            </td>
+                            <td>
+                               <p>Nguyễn Sỹ Duy </p>
+                            </td>
+                            <td>
+                               <ul>
+                                    <li>Sđt: 0354827766</li>
+                                    <li>Email : duy123@gmail.com</li>
+                                    <li>Đại học: Học viện Công nghệ Bưu chính Viễn thông</li>
+                               </ul>
+                            </td>
+                            <td>
+                                <p>Kỹ thuật phần mềm</p>
+                            </td>
+                            <td>
+                                Công nghệ thông tin
+                            </td>
+                            <td>
+                                <button id="them">Thêm </button>
+                                <button id="xoa">Xóa </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="meo.jpg" alt="" style="width: 40px; height: 50px;">
+                            </td>
+                            <td>
+                               <p>Nguyễn Sỹ Duy </p>
+                            </td>
+                            <td>
+                               <ul>
+                                    <li>Sđt: 0354827766</li>
+                                    <li>Email : duy123@gmail.com</li>
+                                    <li>Đại học: Học viện Công nghệ Bưu chính Viễn thông</li>
+                               </ul>
+                            </td>
+                            <td>
+                                <p>Kỹ thuật phần mềm</p>
+                            </td>
+                            <td>
+                               Hệ thống thông tin
+                            </td>
+                            <td>
+                                <button id="them">Thêm </button>
+                                <button id="xoa">Xóa </button>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuItems = document.querySelectorAll('.sidebar ul li a');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            var href = this.getAttribute('href');
+            window.location.href = href;
+        });
+    });
+});
+    </script>
+</body>
+</html>
